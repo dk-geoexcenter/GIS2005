@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      
+      arcgis-map {
+        width: 800px;
+        height: 400px;
+      }
+
+      img {
+        width: 800px;
+        height: 200px;
+      }
+
+      p {
+        width: 800px;
+      }
+
+    </style>
+
+    <!-- Load the ArcGIS Maps SDK for JavaScript from CDN -->
+    <script type="module" src="https://js.arcgis.com/5.1/"></script>
+    <script type="text/javascript" src="ex6script.js" defer></script>
+
+  </head>
+
+
+  <body>
+
+    <img src="img/mountain.png" alt="mountain" />
+
+    <arcgis-map item-id="c812361718b0490892372bef41aa5ae4" center="-105.268551, 40.016602" zoom="13">
+
+      <arcgis-zoom slot="top-left"></arcgis-zoom>
+
+    </arcgis-map>
+
+    <p>This map outlines hiking trails in the City of Boulder (dashed lines in orange) and filtered for horse friendly trails. Trailhead names in purple. Playground surfaces denoted in green (and exaggerated in scale to be more visible).</p>
+  </body>
+
+</html>
